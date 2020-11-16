@@ -13,6 +13,8 @@ env.wm_attributes("-topmost", 1)
 
 # Create and prepare our canvas
 canvas = Canvas(env, width=800, height=600, bd=0, highlightthickness=0)
+img = PhotoImage(file="bg.png")
+canvas.create_image(0, 0, anchor=NW, image=img)
 canvas.pack()
 env.update()
 
